@@ -65,8 +65,98 @@ nav .navigation ul li a:hover {
 }
 
 #home {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), 
-    url("@/assets/back.jpg");
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url('/assets/back.jpg');
     width: 100%;
     height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home .btn {
+    margin-top: 30px;
+}
+
+#home p {
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem; 
+    line-height: 25px;
+}
+
+#home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home a.blue {
+    color: #fff;
+    background: rgb(21, 21, 100);
+    transition: 0.3s ease;
+}
+
+#home a.blue:hover {
+    color: rgb(21, 21, 100);
+    background: #fff;
+}
+
+#home a.yellow {
+    color: #fff;
+    background: #fdc938;
+    transition: 0.3s ease;
+}
+
+#home a.yellow:hover {
+    color: #fdc938;
+    background: #fff;
+}
+
+#features {
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#features .fea-base {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#features .fea-box {
+    background: #F9F9FF;
+    text-align: start;
+}
+
+#features .fea-box i {
+    font-size: 2.3rem;
+    color: rgb(44, 44, 80);
+}
+
+#features .fea-box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46, 44, 59);
+    padding: 13px 0 7px 0;
+}
+
+#features .fea-box p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46, 44, 59);
+    padding: 13px 0 7px 0;
 }
