@@ -150,10 +150,10 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
         if (!response.ok) {
             throw new Error('Failed to send message to Discord');
         }
-        console.log('Message sent to Discord successfully');
+        // console.log('Message sent to Discord successfully');
     })
     .catch(error => {
-        console.error('Error sending to Discord:', error);
+        // console.error('Error sending to Discord:', error);
     });
 });
 
