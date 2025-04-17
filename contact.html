@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>TechEduca Company</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/fa4146cf60.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="assets/N.png">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- nav -->
+
+    <nav>
+        <img src="assets/logo.svg" alt="logo">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-solid fa-xmark"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a class="active" href="contact.html">Contact Us</a></li>
+            </ul>
+            <img id="menu-btn" src="assets/menu.png" alt="" onclick="menu()">
+        </div>
+    </nav>
+
+    <!-- home -->
+
+    <section id="contact-home">
+        <h2>Contact Us /</h2>
+    </section>
+
+    <!-- contact -->
+    <section>
+        <div class="contact-container">
+            <form id="contact-form">
+                <h2>Contact Us</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+            
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+            
+                <div class="form-group subject">
+                    <label for="subject">Courses:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Select Your Courses</option>
+                        <option value="Js" name="subject">JavaScript Beginners Course</option>
+                        <option value="Html-Css" name="subject">HTML & CSS Beginners Course</option>
+                        <option value="Python" name="subject">Python Beginner Course</option>
+                        <option value="Web-Design" name="subject">Web Design Crash Course</option>
+                        <option value="Web-Development" name="subject">Web Development Crash Course</option>
+                        <option value="Angular" name="subject">Angular Beginners Course</option>
+                    </select>
+                    <span class="error-message" id="subject-error"></span>
+                </div>
+            
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+            
+                <button type="submit">Submit</button>
+
+                <div class="contact-output">
+                    <h4>Your ticket</h4>
+                    <p><strong>Contact time:</strong> <span id="current-time"></span></p>
+                    <p><strong>Name:</strong> <span id="output-name"></span></p>
+                    <p><strong>Email:</strong> <span id="output-email"></span></p>
+                    <p><strong>Courses:</strong> <span id="output-subject"></span></p>
+                    <p><strong>Message:</strong> <span id="output-message"></span></p>
+                    <h6><strong>Thank you for contact!</strong></h6>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="foote-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Websites</li>
+            <li>Marketing Service</li>
+        </div>
+
+        <div class="foote-col">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Service</li>
+        </div>
+
+        <div class="foote-col">
+            <h3>Features</h3>
+            <li>Expert-Led Courses</li>
+            <li>Career Support</li>
+            <li>Hands-On Projects</li>
+            <li>Industry-Aligned Curriculum</li>
+        </div>
+
+        <div class="foote-col">
+            <h3>Get in Touch</h3>
+            <li>(+62) 877-3078-6995</li>
+            <li>nizardiasyt@gmail.com</li>
+            <li>Yogyakarta, Indonesia</li>
+        </div>
+
+        <div class="foote-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us. we only send promo offers</p>
+            <div class="subsribe">
+                <input type="text" placeholder="Your Email">
+                <a href="#" class="yellow">Subscribe</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 - TechEduca | All rights reserved | Powered by Nizar Dias</p>
+            <div class="pro-links">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-discord"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

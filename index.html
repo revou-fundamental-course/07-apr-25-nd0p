@@ -3,25 +3,45 @@
 <head>
     <meta charset="UTF-8" />
     <title>TechEduca Company</title>
+
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <script src="https://kit.fontawesome.com/fa4146cf60.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="assets/logo.svg">
+
+    <link rel="icon" href="assets/N.png">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <!-- nav -->
+
     <nav>
         <img src="assets/logo.svg" alt="logo">
         <div class="navigation">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Our Profile</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Message Us</a></li>
+                <i id="menu-close" class="fa-solid fa-xmark"></i>
+                <li><a  class="active" href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
+            <img id="menu-btn" src="assets/menu.png" alt="" onclick="menu()">
         </div>
     </nav>
 
+    <!-- home -->
+
     <section id="home">
+        <div class="slide">
+            <img src="assets/back.jpg" class="slide-banner active">
+            <img src="assets/back1.jpg" class="slide-banner">
+            <img src="assets/back2.jpg" class="slide-banner">
+        </div>
         <h2 id="welcome">Hi, Enhace Your Future With TechEduca</h2>
         <p>offers cutting-edge tech education designed for the digital age. Explore AI, coding, cybersecurity, and more through
         interactive modules and expert-led sessions. Flexible learning—self-paced or live—empowers you with industry-relevant
@@ -31,6 +51,8 @@
             <a class="yellow" href="#">Visit Course</a>
         </div>
     </section>
+    
+    <!-- features -->
 
     <section id="features">
         <h1>Awesome Features</h1>
@@ -55,6 +77,8 @@
             </div>
         </div>
     </section>
+
+    <!-- course -->
 
     <section id="course">
         <h1>Our Popular Courses</h1>
@@ -84,7 +108,7 @@
                 <img src="assets/c2.jpg" alt="">
                 <div class="details">
                     <span>Updated 13/04/25</span>
-                    <h6>JavaScript Beginners Course</h6>
+                    <h6>HTML & CSS Beginners Course</h6>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -103,7 +127,7 @@
                 <img src="assets/c3.jpg" alt="">
                 <div class="details">
                     <span>Updated 13/04/25</span>
-                    <h6>JavaScript Beginners Course</h6>
+                    <h6>Python Beginner Course</h6>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -122,7 +146,7 @@
                 <img src="assets/c4.jpg" alt="">
                 <div class="details">
                     <span>Updated 13/04/25</span>
-                    <h6>JavaScript Beginners Course</h6>
+                    <h6>Web Design Crash Course</h6>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -141,7 +165,7 @@
                 <img src="assets/c5.jpg" alt="">
                 <div class="details">
                     <span>Updated 13/04/25</span>
-                    <h6>JavaScript Beginners Course</h6>
+                    <h6>Web Development Crash Course</h6>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -160,26 +184,7 @@
                 <img src="assets/c6.jpg" alt="">
                 <div class="details">
                     <span>Updated 13/04/25</span>
-                    <h6>JavaScript Beginners Course</h6>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>(239)</span>
-                    </div>
-                </div>
-                <div class="cost">
-                    $49.99
-                </div>
-            </div>
-
-            <div class="courses">
-                <img src="assets/c7.jpeg" alt="">
-                <div class="details">
-                    <span>Updated 13/04/25</span>
-                    <h6>JavaScript Beginners Course</h6>
+                    <h6>Angular Beginners Course</h6>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -196,7 +201,9 @@
         </div>
     </section>
 
-    <section class="contact">
+    <!-- registration -->
+
+    <section id="registration">
         <div class="reminder">
             <p>Get 100 online Courses for Free</p>
             <h1>Contact Us To Get It</h1>
@@ -208,59 +215,133 @@
                     23 <br> Hours
                 </div>
                 <div class="date">
-                    06 <br> Minutes
+                    06 <br> Mins
                 </div>
                 <div class="date">
-                    58 <br> Seconds
+                    58 <br> Secs
                 </div>
             </div>
         </div> 
+
+        <div class="form">
+            <h3>Create Free Account Now!</h3>
+            <input type="text" placeholder="Name" name="" id="">
+            <input type="text" placeholder="Email" name="" id="">
+            <input type="text" placeholder="Phone Number" name="" id="">
+            <div class="btn">
+                <a class="yellow" href="#">Submit Form</a>
+            </div>
+        </div>
     </section>
 
-    <!-- <div class="form">
-        <h3>Contact To Free Account Now!</h3>
-        <input type="text" placeholder="Name" name="" id="">
-    </div> -->
+    <!-- experts -->
 
-    <aside class="main-container">
-        <form id="contact-form">
-            <h2>Contact Us</h2>
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                <span class="error-message" id="name-error"></span>
-            </div>
-    
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                <span class="error-message" id="email-error"></span>
-            </div>
-    
-            <div class="form-group">
-                <label for="subject">Subject:</label>
-                <select id="subject" name="subject" required>
-                    <option value="" disabled selected>Select Your Course</option>
-                    <option value="Bali">JavaScript Beginners Course</option>
-                    <option value="Jepang">Jepang</option>
-                    <option value="Singapore">Singapore</option>
-                    <option value="Bandung">Bandung</option>
-                    <option value="Surabaya">Surabaya</option>
-                </select>
-                <span class="error-message" id="subject-error"></span>
-            </div>
-    
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-                <span class="error-message" id="message-error"></span>
-            </div>
-    
-            <button type="submit">Submit</button>
-        </form>
-    </aside>
+    <section id="experts">
+        <h1>Community Experts</h1>
+        <p>Experts from top tech companies sharing real-world insights.</p>
+        <div class="expert-box">
 
+            <div class="profile">
+                <img src="assets/pro1.webp" alt="">
+                <h6>Ema Arnik</h6>
+                <p>Python & Algoritma</p>
+                <div class="pro-links">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
 
+            <div class="profile">
+                <img src="assets/pro2.webp" alt="">
+                <h6>Jason</h6>
+                <p>Data Design Expert</p>
+                <div class="pro-links">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="assets/pro3.webp" alt="">
+                <h6>David Bomber</h6>
+                <p>Full Stack Developer</p>
+                <div class="pro-links">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="assets/pro4.webp" alt="">
+                <h6>Ema Arnik</h6>
+                <p>Design Expert</p>
+                <div class="pro-links">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="foote-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Websites</li>
+            <li>Marketing Service</li>
+        </div>
+
+        <div class="foote-col">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Service</li>
+        </div>
+
+        <div class="foote-col">
+            <h3>Features</h3>
+            <li>Expert-Led Courses</li>
+            <li>Career Support</li>
+            <li>Hands-On Projects</li>
+            <li>Industry-Aligned Curriculum</li>
+        </div>
+
+        <div class="foote-col">
+            <h3>Get in Touch</h3>
+            <li>(+62) 877-3078-6995</li>
+            <li>nizardiasyt@gmail.com</li>
+            <li>Yogyakarta, Indonesia</li>
+            <!-- <li>Community Forums</li> -->
+        </div>
+
+        <div class="foote-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us. we only send promo offers</p>
+            <div class="subsribe">
+                <input type="text" placeholder="Your Email">
+                <a href="#" class="yellow">Subscribe</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 - TechEduca | All rights reserved | Powered by Nizar Dias</p>
+            <div class="pro-links">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-discord"></i>
+            </div>
+        </div>
+    </footer>
+    
     <script src="js/script.js"></script>
 </body>
 </html>
